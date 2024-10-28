@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Puritan:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* Variáveis Globais */
+:root {
+    --branco: #ffffff;
+    --azulBanner: rgba(116, 125, 255, 0.35);
+    --Roxo: #747dff;
+    --cinzaParagrafo: #3C4852;
+    --cinzaFormulario: #767f86;
+    --amarelo: #ffad32;
+}
+
+/* Reset (limpa as configurações padrão) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+
+    font-family: sans-serif; 
+    font-size: 18px;
+}
+
+
+body {
+    background-color: var(--branco);
+    color: var(--cinzaParagrafo);
+    padding: 0rem 1rem;
+}
+
+header{
+    background-image: url('./IMG/Header\ -\ banner.png');
+    background-size:cover; 
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+nav{
+    background-color: var(--azulBanner);
+    color: var(--branco);
+    font-family: 'Lobster', cursive;
+    font-size: 27px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+nav a{
+    color: var(--branco);
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    display: inline-block;
+    margin: 0 15px;
+    text-decoration: none; 
+    padding-left: 3rem; 
+}
+
+.ExploreMundo{
+    color: var(--branco);
+    border-radius: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 10rem 10rem;
+
+}
+
+/* .ExploreMundo h1{
+    box-shadow:  rgba(0, 0, 0, 0.75);
+    
+} */
+
+.formularios{
+    background-color: var(--branco);
+    color: var(--cinzaFormulario);
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 100%;
+    padding: 1.3rem;
+    margin: 1rem;
+    border: 1px solid #f9f9f9;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.form1, .form2, .form3 {
+    display: flex;
+    flex-direction: column;
+    margin: 1.3rem 0.4rem;
+    flex: 1;
+    min-width: 0;
+}
+
+input{
+    width: 100%;
+    height: 2.5rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    border-radius: 0.5rem;
+    color: #767f86;
+    border:0.1rem solid #b8c0c7;
+    padding: 0.5rem;
+    margin-bottom: -1.7rem;
+}
+
+.botaoFormulario button{
+    width: 100%;
+    height: 50%;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 4rem;
+    background-color: var(--amarelo);
+    color: var(--branco);
+    border: none;
+    border-radius: 0.5rem;
+    margin-top: 2.7rem;
+    cursor:pointer;
+}
+.colocandoTransparencia{
+    background-color: var(--azulBanner);
+    max-width: 100%;
+    padding: 1.3rem auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.sectionUm{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.articleUmSectionUm{
+    height: 100%;
+    width: 100%;
+    padding: 7rem 3rem;
+}
+
+.proximoPasseio hr{
+    background-color: var(--amarelo);
+    height: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 18rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.proximoPasseio{
+    font-family: 'Lobster', cursive;
+    font-size: 1.2rem;
+    color: var(--Roxo);
+}
+
+.detalhesPasseio{
+    height: 100%;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.7rem;
+}
+
+.botaoPasseio button{
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    background-color: var(--amarelo);
+    color: var(--branco);
+    border: none;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    cursor:pointer;
+}
+
+.articleDoisSectionUm {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    padding: 7rem 3rem;
+}
+
+.imagemContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+
+}
+
+.imagemUm, .imagemDois, .imagemTres, .imagemQuatro {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    border: 1px solid rgba(0, 0, 0, 0.007); 
+    border-radius: 0rem 0rem 0.5rem 0.5rem; 
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); 
+    overflow: hidden;
+}
+
+.imagemUm img, .imagemDois img, .imagemTres img, .imagemQuatro img {
+    width: 100%;
+    height: auto; 
+}
+
+.sectionDois{
+    background: linear-gradient(65.68deg, #FFE7C2 -4.19%, #BDACFF 104.38%);
+    height: 100%;
+    width: 100%;
+    padding-bottom: 5rem;
+}
+
+.ondeViajar{
+    display: flex;
+    justify-content: center;
+    font-family: 'Lobster', cursive;
+    font-size: 1.0rem;
+    color: var(--Roxo);
+    padding-top: 5rem;
+}
+
+.imagemContainerDois{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.Barcelona, .Porto, .Milao, .Londres, .Lauterbrunnen, .Paris{
+    background-color: var(--branco);
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    margin: 0.2rem;
+    border: 1px solid rgba(0, 0, 0, 0.007); 
+    border-radius: 0.5rem 0.5rem; 
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.Barcelona img, .Porto img, .Milao img, .Londres img, .Lauterbrunnen img, .Paris img{
+    width: 100%;
+    height: auto; 
+}
+
+.spanTeste{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.Detalhes{
+    padding-top: 0.5rem;
+}
+
+.precoBarcelona, .precoPorto, .precoMilao, .precoLondres, .precoLauterbrunnen, .precoParis {
+    display: inline-block;
+}
+
+.precoEBotao{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+s{
+  font-size: 0.8rem;  
+}
+
+.botaoBarcelona button, .botaoPorto button, .botaoMilao button, .botaoLondres button, .botaoLauterbrunnen button, .botaoParis button{
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    background-color: var(--amarelo);
+    color: var(--branco);
+    border: none;
+    border-radius: 0.5rem;
+    cursor:pointer;
+}
+
+.sectionTres{
+    height: 100%;
+    width: 100%;
+    padding-bottom: 5rem;
+}
+
+.avaliacaoClientes{
+    display: flex;
+    justify-content: center;
+    font-family: 'Lobster', cursive;
+    font-size: 1.0rem;
+    color: var(--Roxo);
+    padding-top: 5rem;
+}
+
+.paragrafoAvaliacao{
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    font-size: 0.8rem;
+    color: var(--cinzaFormulario);
+    padding: 2rem 16rem;
+}
+
+.conteinerAvaliacao{
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 7rem;
+}
+
+.imagemNome{
+    display: flex;
+    flex-direction: column;
+}
+
+.nomeCliente{
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    color: var(--cinzaFormulario);
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
+}
+
+.nomeCliente p{
+    padding-top: 0.15rem;
+}
+.botaoDireitoAvaliacao button, .botaoEsquerdoAvaliacao button{
+    font-family: "Puritan", sans-serif;
+    font-size: 2rem;
+    padding: 0.1rem 0.5rem;
+    background-color: #B8C0C7;
+    color: var(--branco);
+    border: none;
+    border-radius: 0.4rem;
+    cursor:pointer;
+}
+
+.botaoDireitoAvaliacao, .botaoEsquerdoAvaliacao{
+    padding-top: 2rem;
+}
