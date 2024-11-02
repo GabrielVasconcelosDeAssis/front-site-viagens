@@ -28,7 +28,7 @@ html {
 body {
     background-color: var(--branco);
     color: var(--cinzaParagrafo);
-    padding: 0rem 1rem;
+    padding: 0rem 0.5rem;
 }
 
 header{
@@ -59,6 +59,11 @@ nav a{
     margin: 0 15px;
     text-decoration: none; 
     padding-left: 3rem; 
+    transition: color 0.3s;
+}
+
+nav a:hover{
+    color: #FFAD32;
 }
 
 .ExploreMundo{
@@ -102,7 +107,7 @@ nav a{
     min-width: 0;
 }
 
-input{
+.formularios input{
     width: 100%;
     height: 2.5rem;
     font-family: "Poppins", sans-serif;
@@ -126,7 +131,9 @@ input{
     border: none;
     border-radius: 0.5rem;
     margin-top: 2.7rem;
-    cursor:pointer;
+    cursor:pointer;  
+    transition: background-color 0.3s;
+      
 }
 .colocandoTransparencia{
     background-color: var(--azulBanner);
@@ -170,6 +177,16 @@ input{
     width: 100%;
     font-family: "Poppins", sans-serif;
     font-size: 0.7rem;
+    
+}
+.detalhesPasseio p{
+    height: 100%;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    font-weight: normal;
+    padding-top: 0.5rem;
+    padding-left: 0px;
 }
 
 .botaoPasseio button{
@@ -183,14 +200,16 @@ input{
     border-radius: 0.5rem;
     margin-top: 2rem;
     cursor:pointer;
+    transition: background-color 0.3s;
+
 }
 
 .articleDoisSectionUm {
     height: 100vh;
     width: 100%;
-    display: flex;
-    justify-content: start;
     padding: 7rem 3rem;
+    padding-right: 0px;
+
 }
 
 .imagemContainer {
@@ -198,6 +217,7 @@ input{
     display: flex;
     justify-content: center;
     padding: 1rem;
+    overflow: hidden;
 
 }
 
@@ -215,7 +235,7 @@ input{
 
 .imagemUm img, .imagemDois img, .imagemTres img, .imagemQuatro img {
     width: 100%;
-    height: auto; 
+    height: auto;
 }
 
 .sectionDois{
@@ -245,17 +265,47 @@ input{
     background-color: var(--branco);
     font-family: "Poppins", sans-serif;
     font-size: 0.9rem;
-    padding: 0.5rem;
-    margin: 0.2rem;
+    padding: 1.0rem 0.7rem;
+    margin: 0.7rem;
     border: 1px solid rgba(0, 0, 0, 0.007); 
     border-radius: 0.5rem 0.5rem; 
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    overflow: hidden; 
 }
+
+.detalhesBarcelona p{
+    padding-left: 0px;
+}
+
+.detalhesPorto p{
+    padding-left: 0px;
+}
+
+.detalhesMilao p{
+    padding-left: 0px;
+}
+
+.detalhesLondres p{
+    padding-left: 0px;
+}
+
+.detalhesLauterbrunnen p{
+    padding-left: 0px;
+}
+
+.detalhesParis p{
+    padding-left: 0px;
+}
+
+
 
 .Barcelona img, .Porto img, .Milao img, .Londres img, .Lauterbrunnen img, .Paris img{
     width: 100%;
-    height: auto; 
+    height: auto;
+   
+
 }
+
 
 .spanTeste{
     font-size: 1.1rem;
@@ -264,7 +314,9 @@ input{
 
 .Detalhes{
     padding-top: 0.5rem;
+    
 }
+
 
 .precoBarcelona, .precoPorto, .precoMilao, .precoLondres, .precoLauterbrunnen, .precoParis {
     display: inline-block;
@@ -273,12 +325,16 @@ input{
 .precoEBotao{
     display: flex;
     justify-content: space-between;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-top: 1rem;
+    display: inline-block;
 }
 
 s{
-  font-size: 0.8rem;  
+    font-family: "Poppins", sans-serif;
+    font-size: 0.6rem;  
+    font-weight: bold;
+    color: var(--cinzaFormulario);
+    padding: 0.4rem;
 }
 
 .botaoBarcelona button, .botaoPorto button, .botaoMilao button, .botaoLondres button, .botaoLauterbrunnen button, .botaoParis button{
@@ -291,6 +347,15 @@ s{
     border: none;
     border-radius: 0.5rem;
     cursor:pointer;
+    transition: background-color 0.3s;
+
+}
+
+.botaoBarcelona , .botaoPorto , .botaoMilao , .botaoLondres , .botaoLauterbrunnen , .botaoParis {
+
+    display: inline-block;
+    padding-left: 1rem;
+
 }
 
 .sectionTres{
@@ -338,8 +403,14 @@ s{
     padding-top: 0.5rem;
 }
 
+.nomeCliente .spanTeste{
+    padding-top: 1rem;
+}
+
 .nomeCliente p{
-    padding-top: 0.15rem;
+    font-size: 1.0rem;
+    padding-top: 1.1rem;
+    padding-left: 0.15rem;
 }
 .botaoDireitoAvaliacao button, .botaoEsquerdoAvaliacao button{
     font-family: "Puritan", sans-serif;
@@ -350,8 +421,108 @@ s{
     border: none;
     border-radius: 0.4rem;
     cursor:pointer;
+    transition: background-color 0.3s;
 }
 
 .botaoDireitoAvaliacao, .botaoEsquerdoAvaliacao{
     padding-top: 2rem;
+}
+
+footer{
+    font-family: "Poppins", sans-serif; 
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--cinzaParagrafo);
+    color: #B8C0C7;
+    padding: 1rem;
+    padding-bottom: 4rem;
+}
+
+
+.buenasViagensFooter{
+    font-family: 'Lobster', cursive;
+    font-style: italic;
+    font-size: 1.8rem;
+    padding: 2rem;
+}
+
+.buenasViagensETurismoFooter h1,p{
+    font-size: 0.8rem;
+    padding-left: 2rem;
+}
+
+.direitosReservados p{
+    margin-right: 1rem;
+    padding-top: 2rem;
+}
+
+.parceiros{
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.parceiro1, .parceiro2, .parceiro3 , .parceiro4, .parceiro5 , .parceiro6, .parceiro7{
+    white-space: nowrap;
+    font-size: 0.9rem;
+    padding: 0.2rem;
+}
+
+.meioFooter{
+    padding-right: 5rem;
+}
+
+.direitaFooter{
+    font-weight: bold;
+    padding: 2.3rem;
+    overflow: hidden;
+}
+
+.botaoAssinar button{
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.4rem 1.8rem;
+    background-color: var(--amarelo);
+    color: var(--branco);
+    border: none;
+    border-radius: 0.5rem;
+    cursor:pointer;
+    margin-left: 4rem;
+    transition: background-color 0.3s;
+}
+
+.formularioEBotao{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+}
+
+.formularioAssinar{
+    padding-right: 1rem;
+}
+
+.formularioAssinar input{
+    min-width: 130%;
+    height: 2.2rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    color: #767f86;
+    padding: 1rem;
+}
+
+.redesSociais{
+    padding-top: 1rem;
+}
+
+.lilas{
+    background-color: var(--Roxo);
+    padding: 2rem;
+}
+
+button:hover{
+    background-color: var(--Roxo);
 }
